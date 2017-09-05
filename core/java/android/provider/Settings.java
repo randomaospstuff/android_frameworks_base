@@ -5004,6 +5004,12 @@ public final class Settings {
         public static final String QS_MEDIA_PLAYER = "qs_media_player";
 
         /**
+        * Whether to enable or disable vibration during calls
+        * @hide
+        */
+        public static final String INCALL_FEEDBACK_VIBRATE = "incall_feeedback_vibrate";
+
+        /**
          * Keys we no longer back up under the current schema, but want to continue to
          * process when restoring historical backup datasets.
          *
@@ -5137,6 +5143,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(POCKET_JUDGE);
             PRIVATE_SETTINGS.add(FOOTER_TEXT_SHOW);
             PRIVATE_SETTINGS.add(QS_HEADER_BG_ALPHA);
+            PRIVATE_SETTINGS.add(INCALL_FEEDBACK_VIBRATE);
         }
 
         /**
