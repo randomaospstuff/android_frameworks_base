@@ -460,7 +460,7 @@ final class AssistHandleReminderExpBehavior implements BehaviorController {
         if (!isFullyAwake() || mIsNavBarHidden || isSuppressed()) {
             mAssistHandleCallbacks.hide();
         } else if (mOnLockscreen) {
-            mAssistHandleCallbacks.showAndStay();
+            mAssistHandleCallbacks.hide();
         } else if (mIsLauncherShowing) {
             mAssistHandleCallbacks.showAndGo();
         } else if (mConsecutiveTaskSwitches == 1) {
